@@ -1,176 +1,208 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WTC Rankings</title>
+<title>ICC Men's Rankings</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f5f5;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
-.container{
-max-width:900px;
-margin:20px auto;
-background:#fff;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 2px 8px rgba(0,0,0,.2);
+body{
+    background:#f2f4f7;
+    padding:20px;
+}
+
+.rank-card{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.header{
+    background:#2dc96b;
+    color:#003b66;
+    padding:18px 25px;
+}
+
+.header h2{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.header p{
+    font-size:13px;
+    letter-spacing:2px;
+    color:#0d4a6d;
+}
+
+.tabs{
+    display:flex;
+}
+
+.tab{
+    flex:1;
+    text-align:center;
+    padding:15px;
+    font-weight:bold;
+    background:#f2f2f2;
+}
+
+.active{
+    background:#28c76f;
+    color:#fff;
 }
 
 table{
-width:100%;
-border-collapse:collapse;
-}
-
-thead{
-background:#000;
-color:#fff;
+    width:100%;
+    border-collapse:collapse;
 }
 
 th{
-padding:18px;
-font-size:18px;
-text-align:center;
+    text-align:left;
+    padding:15px;
+    color:#666;
+    font-size:14px;
 }
 
 td{
-padding:18px;
-font-size:18px;
-text-align:center;
-border-bottom:1px solid #ddd;
+    padding:15px;
+    border-top:1px solid #eee;
+    font-size:15px;
 }
 
-.team{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:bold;
-color:#002366;
+.team small{
+    display:block;
+    color:#888;
+    margin-top:3px;
 }
 
-.flag{
-font-size:30px;
+.rank{
+    font-weight:bold;
 }
 
-tr:hover{
-background:#f0f7ff;
+.rating,
+.points{
+    text-align:center;
+    font-weight:bold;
 }
 
-@media(max-width:600px){
-th,td{
-font-size:15px;
-padding:12px;
+.footer{
+    background:#f8f8f8;
+    text-align:center;
+    padding:18px;
+    border-top:1px solid #ddd;
 }
-.flag{
-font-size:24px;
+
+.footer h3{
+    color:#0a5dbb;
+    font-size:20px;
 }
+
+.footer p{
+    color:#444;
+    margin-top:6px;
 }
 </style>
 
 </head>
 <body>
 
-<div class="container">
+<div class="rank-card">
+
+<div class="header">
+<h2>ICC MEN'S RANKINGS</h2>
+<p>SELECTED TEAMS STANDINGS</p>
+</div>
+
+<div class="tabs">
+<div class="tab">TEST</div>
+<div class="tab active">ODI</div>
+<div class="tab">T20</div>
+</div>
 
 <table>
 
-<thead>
 <tr>
-<th>POS</th>
+<th>RANK</th>
 <th>TEAM</th>
-<th>PLD</th>
-<th>PTS</th>
-<th>PCT</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>1</td>
-<td class="team"><span class="flag">🇦🇺</span>AUS</td>
-<td>8</td>
-<td>84</td>
-<td>87.50</td>
+<th>RATINGS</th>
+<th>POINTS</th>
 </tr>
 
 <tr>
-<td>2</td>
-<td class="team"><span class="flag">🇿🇦</span>SA</td>
-<td>4</td>
-<td>36</td>
-<td>75.00</td>
+<td class="rank">1</td>
+<td class="team">🇮🇳 India<small>Matches:33</small></td>
+<td class="rating">116</td>
+<td class="points">3841</td>
 </tr>
 
 <tr>
-<td>3</td>
-<td class="team"><span class="flag">🇳🇿</span>NZ</td>
-<td>6</td>
-<td>52</td>
-<td>72.22</td>
+<td class="rank">2</td>
+<td class="team">🇳🇿 New Zealand<small>Matches:35</small></td>
+<td class="rating">109</td>
+<td class="points">3809</td>
 </tr>
 
 <tr>
-<td>4</td>
-<td class="team"><span class="flag">🇧🇩</span>BAN</td>
-<td>4</td>
-<td>28</td>
-<td>58.33</td>
+<td class="rank">3</td>
+<td class="team">🇦🇺 Australia<small>Matches:29</small></td>
+<td class="rating">102</td>
+<td class="points">2965</td>
 </tr>
 
 <tr>
-<td>5</td>
-<td class="team"><span class="flag">🇮🇳</span>IND</td>
-<td>6</td>
-<td>36</td>
-<td>50.00</td>
+<td class="rank">4</td>
+<td class="team">🇿🇦 South Africa<small>Matches:28</small></td>
+<td class="rating">102</td>
+<td class="points">2855</td>
 </tr>
 
 <tr>
-<td>6</td>
-<td class="team"><span class="flag">🇱🇰</span>SL</td>
-<td>4</td>
-<td>20</td>
-<td>41.67</td>
+<td class="rank">5</td>
+<td class="team">🇧🇩 Bangladesh<small>Matches:39</small></td>
+<td class="rating">83</td>
+<td class="points">3251</td>
 </tr>
 
 <tr>
-<td>7</td>
-<td class="team"><span class="flag">🏴</span>ENG</td>
-<td>13</td>
-<td>38</td>
-<td>24.36</td>
+<td class="rank">6</td>
+<td class="team">🇼🇸 West Indies<small>Matches:34</small></td>
+<td class="rating">77</td>
+<td class="points">2624</td>
 </tr>
 
 <tr>
-<td>8</td>
-<td class="team"><span class="flag">🇼🇸</span>WI</td>
-<td>11</td>
-<td>30</td>
-<td>22.73</td>
+<td class="rank">7</td>
+<td class="team">🇿🇼 Zimbabwe<small>Matches:15</small></td>
+<td class="rating">63</td>
+<td class="points">941</td>
 </tr>
 
 <tr>
-<td>9</td>
-<td class="team"><span class="flag">🇵🇰</span>PAK</td>
-<td>5</td>
-<td>4</td>
-<td>6.67</td>
+<td class="rank">8</td>
+<td class="team">🇦🇪 United Arab Emirates<small>Matches:23</small></td>
+<td class="rating">16</td>
+<td class="points">357</td>
 </tr>
-
-</tbody>
 
 </table>
+
+<div class="footer">
+<h3>Qualification Status</h3>
+<p><strong>Top 3 Teams Qualify for ICC Group Next.</strong></p>
+<p><strong>Best Teams Qualify to ICC Cricket World Cup 2027.</strong></p>
+</div>
 
 </div>
 
 </body>
 </html>
-Point Seyastam 12 point for a Win 6 point for a tie 4 point fra Draw Top two teams Qualify  For a Final 2027. Thumsam. sprite by sponser 
-#QWE Cricket 
-https://rfff31432-stack.github.io/QWE-Ranking-WTC-/
